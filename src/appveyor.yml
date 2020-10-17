@@ -1,0 +1,15 @@
+skip_commits:
+  message: /docs|Merge pull request.*/
+image: Visual Studio 2019 Preview
+install:
+  - ps: >-
+      Invoke-WebRequest https://dot.net/v1/dotnet-install.ps1 -OutFile dotnet-install.ps1;
+      ./dotnet-install.ps1 --Version 5.0.100-rc.1.20452.10 -InstallDir 'C:\Program Files\dotnet';
+build_script:
+  - dotnet build src --configuration Release
+  - dotnet test src --configuration Release --no-build --no-restore
+on_failure:
+  - ps: Get-ChildItem *.received.* -recurse | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
+test: off
+artifacts:
+- path: nugets\*.nupkg
