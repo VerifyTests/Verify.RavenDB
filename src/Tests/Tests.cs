@@ -12,7 +12,12 @@ public class Tests
 
     static Tests()
     {
+        #region Enable
+
         VerifyRavenDB.Enable();
+
+        #endregion
+
         server = EmbeddedServer.Instance;
         var path = Path.Combine(Path.GetTempPath(), "RavenTestData");
         if (Directory.Exists(path))
@@ -32,8 +37,17 @@ public class Tests
     {
         using var store = await server.GetDocumentStoreAsync("Added");
         using var session = store.OpenSession();
-        session.Store(new Person {Name = "John"});
+
+        #region Added
+
+        var entity = new Person
+        {
+            Name = "John"
+        };
+        session.Store(entity);
         await Verifier.Verify(session);
+
+        #endregion
     }
 
     [Test]
@@ -41,6 +55,8 @@ public class Tests
     {
         using var store = await server.GetDocumentStoreAsync("Updated");
         using var session = store.OpenSession();
+
+        #region Updated
 
         var entity = new Person
         {
@@ -50,10 +66,7 @@ public class Tests
         session.SaveChanges();
         entity.Name = "Joe";
         await Verifier.Verify(session);
-    }
-}
 
-public class Person
-{
-    public string Name = null!;
+        #endregion
+    }
 }

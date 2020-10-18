@@ -13,7 +13,10 @@ Part of the <a href='https://dotnetfoundation.org' alt=''>.NET Foundation</a>
 <!-- toc -->
 ## Contents
 
+  * [Enable](#enable)
   * [Usage](#usage)
+    * [Document added](#document-added)
+    * [Document Updated](#document-updated)
   * [Security contact information](#security-contact-information)<!-- endToc -->
 
 
@@ -22,9 +25,101 @@ Part of the <a href='https://dotnetfoundation.org' alt=''>.NET Foundation</a>
 https://nuget.org/packages/Verify.RavenDB/
 
 
-## Usage
+## Enable
 
 Enable VerifyRavenDB once at assembly load time:
+
+<!-- snippet: Enable -->
+<a id='snippet-enable'></a>
+```cs
+VerifyRavenDB.Enable();
+```
+<sup><a href='/src/Tests/Tests.cs#L15-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-enable' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+## Usage
+
+
+### Document added
+
+Adding a document to a session:
+
+<!-- snippet: Added -->
+<a id='snippet-added'></a>
+```cs
+var entity = new Person
+{
+    Name = "John"
+};
+session.Store(entity);
+await Verifier.Verify(session);
+```
+<sup><a href='/src/Tests/Tests.cs#L41-L50' title='Snippet source file'>snippet source</a> | <a href='#snippet-added' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+Will result in the following verified file:
+
+<!-- snippet: Tests.Added.verified.txt -->
+<a id='snippet-Tests.Added.verified.txt'></a>
+```txt
+[
+  {
+    Key: 'people/1-A',
+    Changes: [
+      {
+        Type: 'DocumentAdded',
+        NewValue: {
+          Name: 'John'
+        }
+      }
+    ]
+  }
+]
+```
+<sup><a href='/src/Tests/Tests.Added.verified.txt#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Added.verified.txt' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+
+### Document Updated
+
+Updating a document in a session:
+
+<!-- snippet: Updated -->
+<a id='snippet-updated'></a>
+```cs
+var entity = new Person
+{
+    Name = "John"
+};
+session.Store(entity);
+session.SaveChanges();
+entity.Name = "Joe";
+await Verifier.Verify(session);
+```
+<sup><a href='/src/Tests/Tests.cs#L59-L70' title='Snippet source file'>snippet source</a> | <a href='#snippet-updated' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+Will result in the following verified file:
+
+<!-- snippet: Tests.Updated.verified.txt -->
+<a id='snippet-Tests.Updated.verified.txt'></a>
+```txt
+[
+  {
+    Key: 'people/1-A',
+    Changes: [
+      {
+        Type: 'FieldChanged',
+        FieldName: 'Name',
+        NewValue: 'Joe',
+        OldValue: 'John'
+      }
+    ]
+  }
+]
+```
+<sup><a href='/src/Tests/Tests.Updated.verified.txt#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Updated.verified.txt' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 
 ## Security contact information
