@@ -3,7 +3,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/3tbsai6lv4d005pg?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-ravendb)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.RavenDB.svg)](https://www.nuget.org/packages/Verify.RavenDB/)
 
-Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of RavenDB bits.
+Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [RavenDB](https://ravendb.net/) bits.
 
 Support is available via a [Tidelift Subscription](https://tidelift.com/subscription/pkg/nuget-verify?utm_source=nuget-verify&utm_medium=referral&utm_campaign=enterprise).
 
@@ -37,7 +37,10 @@ VerifyRavenDB.Enable();
 <sup><a href='/src/Tests/Tests.cs#L15-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-enable' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
+
 ## Usage
+
+Verifiying an [IDocumentSession](https://ravendb.net/docs/article-page/5.0/Csharp/client-api/session/what-is-a-session-and-how-does-it-work) will result in all pending changes being written to a snapshot.
 
 
 ### Document added
