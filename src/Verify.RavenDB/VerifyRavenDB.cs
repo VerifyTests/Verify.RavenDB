@@ -10,6 +10,7 @@
                 {
                     var converters = serializerSettings.Converters;
                     converters.Add(new SessionConverter());
+                    converters.Add(new LazyStringValueConverter());
                 });
             });
         }

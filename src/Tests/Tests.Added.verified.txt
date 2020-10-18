@@ -1,0 +1,13 @@
+[
+  {
+    Key: 'people/1-A',
+    Changes: [
+      {
+        Type: 'DocumentAdded',
+        NewValue: {
+          Name: 'John'
+        }
+      }
+    ]
+  }
+]

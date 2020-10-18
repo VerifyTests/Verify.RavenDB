@@ -1,0 +1,13 @@
+[
+  {
+    Key: 'people/1-A',
+    Changes: [
+      {
+        Type: 'FieldChanged',
+        FieldName: 'Name',
+        NewValue: 'Joe',
+        OldValue: 'John'
+      }
+    ]
+  }
+]
