@@ -16,7 +16,7 @@ Part of the <a href='https://dotnetfoundation.org' alt=''>.NET Foundation</a>
   * [Enable](#enable)
   * [Usage](#usage)
     * [Document added](#document-added)
-    * [Document Updated](#document-updated)
+    * [Document updated](#document-updated)
   * [Security contact information](#security-contact-information)<!-- endToc -->
 
 
@@ -57,7 +57,7 @@ var entity = new Person
 session.Store(entity);
 await Verifier.Verify(session);
 ```
-<sup><a href='/src/Tests/Tests.cs#L41-L50' title='Snippet source file'>snippet source</a> | <a href='#snippet-added' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L42-L51' title='Snippet source file'>snippet source</a> | <a href='#snippet-added' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in the following verified file:
@@ -83,7 +83,7 @@ Will result in the following verified file:
 <!-- endSnippet -->
 
 
-### Document Updated
+### Document updated
 
 Updating a document in a session:
 
@@ -99,7 +99,7 @@ session.SaveChanges();
 entity.Name = "Joe";
 await Verifier.Verify(session);
 ```
-<sup><a href='/src/Tests/Tests.cs#L59-L70' title='Snippet source file'>snippet source</a> | <a href='#snippet-updated' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L60-L71' title='Snippet source file'>snippet source</a> | <a href='#snippet-updated' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in the following verified file:

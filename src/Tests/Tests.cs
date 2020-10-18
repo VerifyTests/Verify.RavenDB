@@ -26,10 +26,11 @@ public class Tests
         }
 
         Directory.CreateDirectory(path);
-        server.StartServer(new ServerOptions
-        {
-            DataDirectory = path
-        });
+        server.StartServer(
+            new ServerOptions
+            {
+                DataDirectory = path
+            });
     }
 
     [Test]
