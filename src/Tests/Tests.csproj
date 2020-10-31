@@ -11,7 +11,7 @@
     <PackageReference Include="RavenDB.Embedded" Version="5.0.3" />
     <PackageReference Include="Verify.NUnit" Version="6.27.0-beta.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.46" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.47" />
     <ProjectReference Include="..\Verify.RavenDB\Verify.RavenDB.csproj" />
   </ItemGroup>
 </Project>
