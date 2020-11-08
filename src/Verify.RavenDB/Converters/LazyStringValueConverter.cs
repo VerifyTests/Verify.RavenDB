@@ -6,7 +6,11 @@ using VerifyTests;
 class LazyStringValueConverter :
     WriteOnlyJsonConverter<LazyStringValue>
 {
-    public override void WriteJson(JsonWriter writer, LazyStringValue? value, JsonSerializer serializer, IReadOnlyDictionary<string, object> context)
+    public override void WriteJson(
+        JsonWriter writer,
+        LazyStringValue? value,
+        JsonSerializer serializer,
+        IReadOnlyDictionary<string, object> context)
     {
         if (value == null)
         {
