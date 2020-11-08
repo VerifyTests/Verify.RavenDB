@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Newtonsoft.Json;
 using Raven.Client.Documents.Session;
 using VerifyTests;
@@ -6,7 +7,7 @@ using VerifyTests;
 class SessionConverter :
     WriteOnlyJsonConverter<IDocumentSession>
 {
-    public override void WriteJson(JsonWriter writer, IDocumentSession? session, JsonSerializer serializer)
+    public override void WriteJson(JsonWriter writer, IDocumentSession? session, JsonSerializer serializer, IReadOnlyDictionary<string, object> context)
     {
         if (session == null)
         {

@@ -1,11 +1,11 @@
 [
   {
-    Key: 'people/1-A',
+    Key: people/1-A,
     Changes: [
       {
-        Type: 'DocumentAdded',
+        Type: DocumentAdded,
         NewValue: {
-          Name: 'John'
+          Name: John
         }
       }
     ]

@@ -1,12 +1,12 @@
 [
   {
-    Key: 'people/1-A',
+    Key: people/1-A,
     Changes: [
       {
-        Type: 'FieldChanged',
-        FieldName: 'Name',
-        NewValue: 'Joe',
-        OldValue: 'John'
+        Type: FieldChanged,
+        FieldName: Name,
+        NewValue: Joe,
+        OldValue: John
       }
     ]
   }
