@@ -67,12 +67,12 @@ Will result in the following verified file:
 ```txt
 [
   {
-    Key: 'people/1-A',
+    Key: people/1-A,
     Changes: [
       {
-        Type: 'DocumentAdded',
+        Type: DocumentAdded,
         NewValue: {
-          Name: 'John'
+          Name: John
         }
       }
     ]
@@ -109,13 +109,13 @@ Will result in the following verified file:
 ```txt
 [
   {
-    Key: 'people/1-A',
+    Key: people/1-A,
     Changes: [
       {
-        Type: 'FieldChanged',
-        FieldName: 'Name',
-        NewValue: 'Joe',
-        OldValue: 'John'
+        Type: FieldChanged,
+        FieldName: Name,
+        NewValue: Joe,
+        OldValue: John
       }
     ]
   }
