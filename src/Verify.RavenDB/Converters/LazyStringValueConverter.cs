@@ -17,6 +17,6 @@ class LazyStringValueConverter :
             return;
         }
 
-        serializer.Serialize(writer,(string)value);
+        serializer.Serialize(writer, (string) value);
     }
 }
