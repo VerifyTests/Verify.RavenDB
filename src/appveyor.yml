@@ -4,10 +4,6 @@ image: Visual Studio 2019
 build_script:
   - dotnet build src --configuration Release
   - dotnet test src --configuration Release --no-build --no-restore
-install:
-  - ps: >-
-      Invoke-WebRequest https://dot.net/v1/dotnet-install.ps1 -OutFile dotnet-install.ps1;
-      ./dotnet-install.ps1 --Version 3.1.403 -InstallDir 'C:\Program Files\dotnet';
 on_failure:
   - ps: Get-ChildItem *.received.* -recurse | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 test: off
