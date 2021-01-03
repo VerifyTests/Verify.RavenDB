@@ -37,14 +37,14 @@ class SessionConverter :
         var changeType = change.Change;
         if (changeType == DocumentsChanges.ChangeType.DocumentAdded)
         {
-            return new Change
+            return new()
             {
                 Type = changeType,
                 NewValue = session.Load<object>(key)
             };
         }
 
-        return new Change
+        return new()
         {
             Type = changeType,
             FieldName = change.FieldName,
