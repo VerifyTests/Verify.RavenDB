@@ -5,19 +5,8 @@
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [RavenDB](https://ravendb.net/) bits.
 
-Support is available via a [Tidelift Subscription](https://tidelift.com/subscription/pkg/nuget-verify?utm_source=nuget-verify&utm_medium=referral&utm_campaign=enterprise).
-
 <a href='https://dotnetfoundation.org' alt='Part of the .NET Foundation'><img src='https://raw.githubusercontent.com/VerifyTests/Verify/master/docs/dotNetFoundation.svg' height='30px'></a><br>
 Part of the <a href='https://dotnetfoundation.org' alt=''>.NET Foundation</a>
-
-<!-- toc -->
-## Contents
-
-  * [Enable](#enable)
-  * [Usage](#usage)
-    * [Document added](#document-added)
-    * [Document updated](#document-updated)
-  * [Security contact information](#security-contact-information)<!-- endToc -->
 
 
 ## NuGet package
@@ -124,10 +113,6 @@ Will result in the following verified file:
 <sup><a href='/src/Tests/Tests.Updated.verified.txt#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Updated.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-
-## Security contact information
-
-To report a security vulnerability, use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
 
 
 ## Icon
