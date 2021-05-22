@@ -2,7 +2,7 @@ skip_commits:
   message: /docs|Merge pull request.*/
 image: Visual Studio 2019
 install:
-  - cmd: choco install dotnet-sdk --version=5.0.200
+  - cmd: choco install dotnet-sdk --version=5.0.202
 build_script:
   - dotnet build src --configuration Release
   - dotnet test src --configuration Release --no-build --no-restore
