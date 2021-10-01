@@ -117,4 +117,4 @@ Will result in the following verified file:
 
 ## Icon
 
-[Raven](https://thenounproject.com/term/raven/2011311/) designed by [Maciej Świerczek](https://thenounproject.com/swierq/) from [The Noun Project](https://thenounproject.com/creativepriyanka).
+[Raven](https://thenounproject.com/term/raven/2011311/) designed by [Maciej Świerczek](https://thenounproject.com/swierq/) from [The Noun Project](https://thenounproject.com).
