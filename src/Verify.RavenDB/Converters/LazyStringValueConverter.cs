@@ -8,15 +8,10 @@ class LazyStringValueConverter :
 {
     public override void WriteJson(
         JsonWriter writer,
-        LazyStringValue? value,
+        LazyStringValue value,
         JsonSerializer serializer,
         IReadOnlyDictionary<string, object> context)
     {
-        if (value == null)
-        {
-            return;
-        }
-
         serializer.Serialize(writer, (string) value);
     }
 }

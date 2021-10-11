@@ -7,13 +7,8 @@ using VerifyTests;
 class SessionConverter :
     WriteOnlyJsonConverter<IDocumentSession>
 {
-    public override void WriteJson(JsonWriter writer, IDocumentSession? session, JsonSerializer serializer, IReadOnlyDictionary<string, object> context)
+    public override void WriteJson(JsonWriter writer, IDocumentSession session, JsonSerializer serializer, IReadOnlyDictionary<string, object> context)
     {
-        if (session == null)
-        {
-            return;
-        }
-
         var changed = session.Advanced.WhatChanged();
         if (changed.Count == 0)
         {
