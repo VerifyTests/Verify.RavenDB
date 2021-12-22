@@ -44,7 +44,7 @@ var entity = new Person
     Name = "John"
 };
 session.Store(entity);
-await Verifier.Verify(session);
+await Verify(session);
 ```
 <sup><a href='/src/Tests/Tests.cs#L42-L51' title='Snippet source file'>snippet source</a> | <a href='#snippet-added' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
@@ -86,7 +86,7 @@ var entity = new Person
 session.Store(entity);
 session.SaveChanges();
 entity.Name = "Joe";
-await Verifier.Verify(session);
+await Verify(session);
 ```
 <sup><a href='/src/Tests/Tests.cs#L60-L71' title='Snippet source file'>snippet source</a> | <a href='#snippet-updated' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
