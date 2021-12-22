@@ -46,7 +46,7 @@ public class Tests
             Name = "John"
         };
         session.Store(entity);
-        await Verifier.Verify(session);
+        await Verify(session);
 
         #endregion
     }
@@ -66,7 +66,7 @@ public class Tests
         session.Store(entity);
         session.SaveChanges();
         entity.Name = "Joe";
-        await Verifier.Verify(session);
+        await Verify(session);
 
         #endregion
     }
