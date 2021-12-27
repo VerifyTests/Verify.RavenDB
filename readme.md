@@ -23,7 +23,7 @@ Enable VerifyRavenDB once at assembly load time:
 ```cs
 VerifyRavenDB.Enable();
 ```
-<sup><a href='/src/Tests/Tests.cs#L15-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-enable' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L10-L14' title='Snippet source file'>snippet source</a> | <a href='#snippet-enable' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -46,7 +46,7 @@ var entity = new Person
 session.Store(entity);
 await Verify(session);
 ```
-<sup><a href='/src/Tests/Tests.cs#L42-L51' title='Snippet source file'>snippet source</a> | <a href='#snippet-added' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L37-L46' title='Snippet source file'>snippet source</a> | <a href='#snippet-added' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in the following verified file:
@@ -88,7 +88,7 @@ session.SaveChanges();
 entity.Name = "Joe";
 await Verify(session);
 ```
-<sup><a href='/src/Tests/Tests.cs#L60-L71' title='Snippet source file'>snippet source</a> | <a href='#snippet-updated' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L55-L66' title='Snippet source file'>snippet source</a> | <a href='#snippet-updated' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in the following verified file:
