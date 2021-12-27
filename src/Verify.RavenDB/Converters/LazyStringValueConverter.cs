@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Sparrow.Json;
-using VerifyTests;
 
 class LazyStringValueConverter :
     WriteOnlyJsonConverter<LazyStringValue>

@@ -1,8 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Raven.Client.Documents.Session;
-using VerifyTests;
 
 class SessionConverter :
     WriteOnlyJsonConverter<IDocumentSession>

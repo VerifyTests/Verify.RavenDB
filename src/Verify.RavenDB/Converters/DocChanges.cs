@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-class DocChanges
+﻿class DocChanges
 {
     public string Key = null!;
     public List<Change> Changes = null!;

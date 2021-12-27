@@ -1,9 +1,4 @@
-﻿using System.IO;
-using System.Threading.Tasks;
-using NUnit.Framework;
-using Raven.Embedded;
-using VerifyNUnit;
-using VerifyTests;
+﻿using Raven.Embedded;
 
 [TestFixture]
 public class Tests
