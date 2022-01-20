@@ -4,11 +4,7 @@ using Sparrow.Json;
 class LazyStringValueConverter :
     WriteOnlyJsonConverter<LazyStringValue>
 {
-    public override void WriteJson(
-        JsonWriter writer,
-        LazyStringValue value,
-        JsonSerializer serializer,
-        IReadOnlyDictionary<string, object> context)
+    public override void Write(VerifyJsonWriter writer, LazyStringValue value, JsonSerializer serializer)
     {
         serializer.Serialize(writer, (string) value);
     }

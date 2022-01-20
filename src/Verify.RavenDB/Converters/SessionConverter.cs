@@ -4,7 +4,7 @@ using Raven.Client.Documents.Session;
 class SessionConverter :
     WriteOnlyJsonConverter<IDocumentSession>
 {
-    public override void WriteJson(JsonWriter writer, IDocumentSession session, JsonSerializer serializer, IReadOnlyDictionary<string, object> context)
+    public override void Write(VerifyJsonWriter writer, IDocumentSession session, JsonSerializer serializer)
     {
         var changed = session.Advanced.WhatChanged();
         if (changed.Count == 0)
