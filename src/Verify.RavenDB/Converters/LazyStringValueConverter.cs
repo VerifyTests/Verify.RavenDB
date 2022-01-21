@@ -1,11 +1,10 @@
-﻿using Newtonsoft.Json;
-using Sparrow.Json;
+﻿using Sparrow.Json;
 
 class LazyStringValueConverter :
     WriteOnlyJsonConverter<LazyStringValue>
 {
-    public override void Write(VerifyJsonWriter writer, LazyStringValue value, JsonSerializer serializer)
+    public override void Write(VerifyJsonWriter writer, LazyStringValue value)
     {
-        serializer.Serialize(writer, (string) value);
+        writer.Serialize((string) value);
     }
 }

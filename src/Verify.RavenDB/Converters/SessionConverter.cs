@@ -1,10 +1,9 @@
-﻿using Newtonsoft.Json;
-using Raven.Client.Documents.Session;
+﻿using Raven.Client.Documents.Session;
 
 class SessionConverter :
     WriteOnlyJsonConverter<IDocumentSession>
 {
-    public override void Write(VerifyJsonWriter writer, IDocumentSession session, JsonSerializer serializer)
+    public override void Write(VerifyJsonWriter writer, IDocumentSession session)
     {
         var changed = session.Advanced.WhatChanged();
         if (changed.Count == 0)
@@ -12,7 +11,7 @@ class SessionConverter :
             return;
         }
 
-        serializer.Serialize(writer,
+        writer.Serialize(
             changed.Select(pair =>
                 new DocChanges
                 {
