@@ -3,10 +3,10 @@
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Verify" Version="15.1.1" />
-    <PackageReference Include="RavenDB.Client" Version="5.3.2" />
+    <PackageReference Include="Verify" Version="15.2.1" />
+    <PackageReference Include="RavenDB.Client" Version="5.3.100" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" Condition="$(Configuration) == 'Release'" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.63" PrivateAssets="all" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.68" PrivateAssets="all" />
   </ItemGroup>
 </Project>
