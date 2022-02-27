@@ -1,18 +1,17 @@
-﻿namespace VerifyTests
+﻿namespace VerifyTests;
+
+public static class VerifyRavenDB
 {
-    public static class VerifyRavenDB
+    public static void Enable()
     {
-        public static void Enable()
+        VerifierSettings.ModifySerialization(settings =>
         {
-            VerifierSettings.ModifySerialization(settings =>
+            settings.AddExtraSettings(serializerSettings =>
             {
-                settings.AddExtraSettings(serializerSettings =>
-                {
-                    var converters = serializerSettings.Converters;
-                    converters.Add(new SessionConverter());
-                    converters.Add(new LazyStringValueConverter());
-                });
+                var converters = serializerSettings.Converters;
+                converters.Add(new SessionConverter());
+                converters.Add(new LazyStringValueConverter());
             });
-        }
+        });
     }
 }
