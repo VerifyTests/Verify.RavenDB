@@ -22,7 +22,7 @@ public class Tests
 
         Directory.CreateDirectory(path);
         server.StartServer(
-            new ServerOptions
+            new()
             {
                 DataDirectory = path
             });

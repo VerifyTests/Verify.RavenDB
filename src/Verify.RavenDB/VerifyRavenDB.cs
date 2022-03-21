@@ -2,8 +2,7 @@
 
 public static class VerifyRavenDB
 {
-    public static void Enable()
-    {
+    public static void Enable() =>
         VerifierSettings.ModifySerialization(settings =>
         {
             settings.AddExtraSettings(serializerSettings =>
@@ -13,5 +12,4 @@ public static class VerifyRavenDB
                 converters.Add(new LazyStringValueConverter());
             });
         });
-    }
 }
