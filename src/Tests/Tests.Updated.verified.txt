@@ -1,4 +1,4 @@
-[
+﻿[
   {
     Key: people/1-A,
     Changes: [
