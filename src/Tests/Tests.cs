@@ -7,12 +7,6 @@ public class Tests
 
     static Tests()
     {
-        #region Enable
-
-        VerifyRavenDB.Enable();
-
-        #endregion
-
         server = EmbeddedServer.Instance;
         var path = Path.Combine(Path.GetTempPath(), "RavenTestData");
         if (Directory.Exists(path))
