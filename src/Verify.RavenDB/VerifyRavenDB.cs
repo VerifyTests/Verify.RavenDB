@@ -2,7 +2,9 @@
 
 public static class VerifyRavenDB
 {
-    public static void Enable() =>
+    public static void Enable()
+    {
+        InnerVerifier.ThrowIfVerifyHasBeenRun();
         VerifierSettings
             .AddExtraSettings(_ =>
             {
@@ -10,4 +12,5 @@ public static class VerifyRavenDB
                 converters.Add(new SessionConverter());
                 converters.Add(new LazyStringValueConverter());
             });
+    }
 }
