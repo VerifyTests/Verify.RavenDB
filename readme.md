@@ -9,7 +9,6 @@ Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of
 **See [Milestones](../../milestones?state=closed) for release notes.**
 
 
-
 ## NuGet package
 
 https://nuget.org/packages/Verify.RavenDB/
@@ -115,7 +114,6 @@ Will result in the following verified file:
 ```
 <sup><a href='/src/Tests/Tests.Updated.verified.txt#L1-L13' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Updated.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
-
 
 
 ## Icon
