@@ -7,8 +7,8 @@
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="26.0.1" PrivateAssets="all" />
     <PackageReference Include="NUnit" Version="4.0.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
-    <PackageReference Include="RavenDB.Embedded" Version="6.0.3" />
-    <PackageReference Include="Verify.NUnit" Version="23.0.0" />
+    <PackageReference Include="RavenDB.Embedded" Version="6.0.4" />
+    <PackageReference Include="Verify.NUnit" Version="23.0.1" />
     <PackageReference Include="Verify.DiffPlex" Version="2.3.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0-release-23619-01" />
     <PackageReference Include="ProjectDefaults" Version="1.0.109" PrivateAssets="all" />
