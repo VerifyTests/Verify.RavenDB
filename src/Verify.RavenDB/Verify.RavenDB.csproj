@@ -4,7 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Argon" Version="0.17.0" />
-    <PackageReference Include="Verify" Version="23.3.0" />
+    <PackageReference Include="Verify" Version="23.5.0" />
     <PackageReference Include="RavenDB.Client" Version="6.0.100" />
     <PackageReference Include="ProjectDefaults" Version="1.0.125" PrivateAssets="all" />
   </ItemGroup>
