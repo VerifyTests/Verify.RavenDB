@@ -18,7 +18,7 @@ https://nuget.org/packages/Verify.RavenDB/
 
 Enable VerifyRavenDB once at assembly load time:
 
-<!-- snippet: Enable -->
+<!-- snippet: enable -->
 <a id='snippet-enable'></a>
 ```cs
 [ModuleInitializer]
@@ -39,7 +39,7 @@ Verifiying an [IDocumentSession](https://ravendb.net/docs/article-page/5.0/Cshar
 Adding a document to a session:
 
 <!-- snippet: Added -->
-<a id='snippet-added'></a>
+<a id='snippet-Added'></a>
 ```cs
 var entity = new Person
 {
@@ -48,7 +48,7 @@ var entity = new Person
 session.Store(entity);
 await Verify(session);
 ```
-<sup><a href='/src/Tests/Tests.cs#L31-L40' title='Snippet source file'>snippet source</a> | <a href='#snippet-added' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L31-L40' title='Snippet source file'>snippet source</a> | <a href='#snippet-Added' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in the following verified file:
@@ -79,7 +79,7 @@ Will result in the following verified file:
 Updating a document in a session:
 
 <!-- snippet: Updated -->
-<a id='snippet-updated'></a>
+<a id='snippet-Updated'></a>
 ```cs
 var entity = new Person
 {
@@ -90,7 +90,7 @@ session.SaveChanges();
 entity.Name = "Joe";
 await Verify(session);
 ```
-<sup><a href='/src/Tests/Tests.cs#L49-L60' title='Snippet source file'>snippet source</a> | <a href='#snippet-updated' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L49-L60' title='Snippet source file'>snippet source</a> | <a href='#snippet-Updated' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in the following verified file:
