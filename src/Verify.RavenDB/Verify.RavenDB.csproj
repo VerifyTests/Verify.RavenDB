@@ -3,8 +3,8 @@
     <TargetFrameworks>net48;net6.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Verify" Version="24.2.0" />
-    <PackageReference Include="RavenDB.Client" Version="6.0.103" />
-    <PackageReference Include="ProjectDefaults" Version="1.0.127" PrivateAssets="all" />
+    <PackageReference Include="Verify" />
+    <PackageReference Include="RavenDB.Client" />
+    <PackageReference Include="ProjectDefaults" PrivateAssets="all" />
   </ItemGroup>
 </Project>
