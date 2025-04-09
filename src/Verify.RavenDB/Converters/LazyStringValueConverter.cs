@@ -1,6 +1,4 @@
-﻿using Sparrow.Json;
-
-class LazyStringValueConverter :
+﻿class LazyStringValueConverter :
     WriteOnlyJsonConverter<LazyStringValue>
 {
     public override void Write(VerifyJsonWriter writer, LazyStringValue value) =>

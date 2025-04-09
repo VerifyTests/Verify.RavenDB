@@ -1,6 +1,4 @@
-﻿using Raven.Client.Documents.Session;
-
-class Change
+﻿class Change
 {
     public DocumentsChanges.ChangeType Type;
     public string? FieldName;

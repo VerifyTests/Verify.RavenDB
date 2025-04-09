@@ -1,6 +1,4 @@
-﻿using Raven.Client.Documents.Session;
-
-class SessionConverter :
+﻿class SessionConverter :
     WriteOnlyJsonConverter<IDocumentSession>
 {
     public override void Write(VerifyJsonWriter writer, IDocumentSession session)

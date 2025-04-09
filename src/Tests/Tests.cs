@@ -1,6 +1,4 @@
-﻿using Raven.Embedded;
-
-[TestFixture]
+﻿[TestFixture]
 public class Tests
 {
     static EmbeddedServer server;

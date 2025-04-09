@@ -48,7 +48,7 @@ var entity = new Person
 session.Store(entity);
 await Verify(session);
 ```
-<sup><a href='/src/Tests/Tests.cs#L31-L40' title='Snippet source file'>snippet source</a> | <a href='#snippet-Added' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L29-L38' title='Snippet source file'>snippet source</a> | <a href='#snippet-Added' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in the following verified file:
@@ -90,7 +90,7 @@ session.SaveChanges();
 entity.Name = "Joe";
 await Verify(session);
 ```
-<sup><a href='/src/Tests/Tests.cs#L49-L60' title='Snippet source file'>snippet source</a> | <a href='#snippet-Updated' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L47-L58' title='Snippet source file'>snippet source</a> | <a href='#snippet-Updated' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in the following verified file:
