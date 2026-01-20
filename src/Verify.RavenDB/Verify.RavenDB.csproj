@@ -6,6 +6,6 @@
     <PackageReference Include="Verify" />
     <PackageReference Include="RavenDB.Client" />
     <PackageReference Include="ProjectDefaults" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Sbom.Targets" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Sbom.Targets" PrivateAssets="all" Condition="$(Configuration)=='Release'" />
   </ItemGroup>
 </Project>
