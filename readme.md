@@ -1,7 +1,7 @@
 # <img src="/src/icon.png" height="30px"> Verify.RavenDB
 
 [![Discussions](https://img.shields.io/badge/Verify-Discussions-yellow?svg=true&label=)](https://github.com/orgs/VerifyTests/discussions)
-[![Build status](https://img.shields.io/appveyor/build/SimonCropp/verify-ravendb)](https://ci.appveyor.com/project/SimonCropp/verify-ravendb)
+[![Build status](https://github.com/VerifyTests/Verify.RavenDB/actions/workflows/build.yml/badge.svg)](https://github.com/VerifyTests/Verify.RavenDB/actions/workflows/build.yml)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.RavenDB.svg)](https://www.nuget.org/packages/Verify.RavenDB/)
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [RavenDB](https://ravendb.net/) bits.<!-- singleLineInclude: intro. path: /docs/intro.include.md -->
