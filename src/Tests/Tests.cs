@@ -1,4 +1,6 @@
-﻿[TestFixture]
+namespace RavenTests;
+
+[NotInParallel]
 public class Tests
 {
     static EmbeddedServer server;
